@@ -1,0 +1,6 @@
+selected resource name:		LAB04 _Felipe_Abreu
+selected resource type:		pipeline
+data factory name:			df-estudos-II
+data factory location:		eastus
+subscription id:		f9090f81-02bc-45d2-89d2-9bfe48adf4a3
+time of download (UTC):		Thu, 29 Sep 2022 17:09:31 GMT
