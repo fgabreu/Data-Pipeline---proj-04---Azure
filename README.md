@@ -33,10 +33,18 @@ To do:
 
 3.0 - RESULTADO DO PROJETO
 
-3.1 - Resultado Final Pipeline no Azure Datafactory:
+3.1 - Resultado Final Pipeline no Azure Datafactory (ETL feito no Databricks e populando as tabelas no AzureSQL):
 
 ![imagem1](https://user-images.githubusercontent.com/57818977/220213941-6c137ae0-e0c2-4541-9b0f-b94478a65488.png)
 
+3.2 - Dashboard em Power BI (conforme necessidades Especificadas)
 
+ - Dashboard com a informação de todas as instituições culturais do Brasil, podendo ser filtradas por Região, Estados e Cidades:
+
+![museus](https://user-images.githubusercontent.com/57818977/220329930-3afd9b7b-5a13-437a-88cf-bf95e2088059.png)
+
+ - Dashboard contendo a informação dos principais eventos em uma linha do tempo:
+
+![eventos](https://user-images.githubusercontent.com/57818977/220330030-bd3d823a-f10e-47e2-b491-c0d6c07c3eec.png)
 
 
