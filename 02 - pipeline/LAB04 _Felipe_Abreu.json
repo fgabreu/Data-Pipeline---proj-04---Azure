@@ -1,0 +1,86 @@
+{
+    "name": "LAB04 _Felipe_Abreu",
+    "properties": {
+        "activities": [
+            {
+                "name": "IPAV_MUSEU_FelipeAbreu",
+                "type": "DatabricksNotebook",
+                "dependsOn": [],
+                "policy": {
+                    "timeout": "7.00:00:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "notebookPath": "/Users/felipe.abreu@blueshift.com.br/LAB04_MUSEU_FelipeAbreu"
+                },
+                "linkedServiceName": {
+                    "referenceName": "AzureDatabricks_museu_felipeabreu",
+                    "type": "LinkedServiceReference"
+                }
+            },
+            {
+                "name": "Stored procedure_STAGE_P_DW",
+                "type": "SqlServerStoredProcedure",
+                "dependsOn": [
+                    {
+                        "activity": "IPAV_MUSEU_FelipeAbreu",
+                        "dependencyConditions": [
+                            "Succeeded"
+                        ]
+                    },
+                    {
+                        "activity": "IPAV_EVENTOS_FelipeAbreu",
+                        "dependencyConditions": [
+                            "Succeeded"
+                        ]
+                    }
+                ],
+                "policy": {
+                    "timeout": "7.00:00:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "storedProcedureName": "[DW_felipe_abreu_lab04].[procedure_STAGE_to_DW]"
+                },
+                "linkedServiceName": {
+                    "referenceName": "AzureSQLDatabase_felipeabreu",
+                    "type": "LinkedServiceReference"
+                }
+            },
+            {
+                "name": "IPAV_EVENTOS_FelipeAbreu",
+                "type": "DatabricksNotebook",
+                "dependsOn": [],
+                "policy": {
+                    "timeout": "7.00:00:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "notebookPath": "/Users/felipe.abreu@blueshift.com.br/LAB04_EVENTOS_FelipeAbreu2"
+                },
+                "linkedServiceName": {
+                    "referenceName": "AzureDatabricks_eventos_felipeabreu",
+                    "type": "LinkedServiceReference"
+                }
+            }
+        ],
+        "folder": {
+            "name": "Felipe Gustavo de Abreu"
+        },
+        "annotations": [],
+        "lastPublishTime": "2022-08-26T12:22:33Z"
+    },
+    "type": "Microsoft.DataFactory/factories/pipelines"
+}
