@@ -1,14 +1,13 @@
 # Lab-04---Azure
 Projeto 04 Big Data - Azure 
 
-Projeto IPAV
 
 1.0 - REQUISITOS DO CLIENTE
 
-O instituto Pocco de Artes Visuais(IPAV) tem como objetivo fomentar iniciativas culturais no Brasil. Eles contrataram a Blueshift para ajudar no mapeamento de instituições, eventos e projetos. no país. A presidente do instituto, Stefani Germanotta, quer visualizar em um dashboard todas as instituições culturais do Brasil separadas por estados e região e os principais eventos em uma linha do tempo.
-O Instituto Pocco deu total liberdade para o time Blueshift desenhar a arquitetura de todo o projeto, desde de que atenda as necessidades citadas, mas por uma questão de orçamento o projeto só poderá ser realizado em Azure e utilizando o Databricks, Data Factory, Azure SQL e Azure Storage.
+O objetivo do projeto é realizar o mapeamento de instituições, eventos e projetos. no país. A ideia final é poder visualizar em um dashboard todas as instituições culturais do Brasil separadas por estados e região e os principais eventos em uma linha do tempo.
+Deverá ser feito a arquitetura de todo o projeto, desde de que atenda as necessidades citadas, mas por uma questão de orçamento o projeto só poderá ser realizado em Azure e utilizando o Databricks, Data Factory, Azure SQL e Azure Storage.
 
-As informações sobre as instituições de artes, eventos e projetos serão extraídos da API do MuseusBr, sistema criado em 2017 pelo governo federal. O sistema possui uma documentação no GitHub sobre como consumir os dados armazenados. As informações disponibilizadas na API vem através de inserção manual das próprias instituições culturais, então não estão padronizadas. Será necessário realizar um trabalho de higienização e tratamento dessas informações antes de exibi-las no dashboard da presidente Germanotta. 
+As informações sobre as instituições de artes, eventos e projetos serão extraídos da API do MuseusBr, sistema criado em 2017 pelo governo federal. O sistema possui uma documentação no GitHub sobre como consumir os dados armazenados. As informações disponibilizadas na API vem através de inserção manual das próprias instituições culturais, então não estão padronizadas. Será necessário realizar um trabalho de higienização e tratamento dessas informações antes de exibi-las no dashboard. 
 
 - API do MuseusBr: http://docs.mapasculturais.org/apidoc/index.html?doctype=api
 - Documentação no GitHub: https://github.com/hacklabr/mapasculturais/blob/master/documentation/docs/mc_config_api.md
@@ -25,7 +24,7 @@ To do:
 - Desenvolver um mecanismo para extrair as informações da API do MuseusBr e armazena-las no Azure Storage;
 - Fazer o tratamento e higienização dos dados, você possuí autonomia para escolher a melhor ferramenta ou plataforma para esse processo;
 - Armazenar os dados trados e higienizados em uma tabela do Azure SQL;
-- Construir um dashboard que atenda as necessidades apontadas pelo Instituto Pocco de Artes Visuais;
+- Construir um dashboard que atenda as necessidades apontadas conforme os requisitos;
 - Construir a documentação de todo o projeto.
 
 
