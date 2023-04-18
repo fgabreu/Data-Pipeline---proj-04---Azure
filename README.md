@@ -1,5 +1,5 @@
 # Lab-04---Azure
-Projeto Interno 04 Big Data - Azure (Blueshift Brasil)
+Projeto 04 Big Data - Azure 
 
 Projeto IPAV
 
