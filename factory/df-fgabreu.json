@@ -1,0 +1,9 @@
+{
+	"name": "df-fgabreu",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "efd134ac-5a35-4b44-b0b9-10063c501efd",
+		"tenantId": "09f64f4b-4373-4b83-a586-e458fc996564"
+	}
+}
